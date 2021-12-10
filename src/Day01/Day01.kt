@@ -1,3 +1,7 @@
+package Day01
+
+import readInput
+
 fun main() {
     fun part1(input: List<String>): Int {
         if (input.size <= 1) {
@@ -6,7 +10,7 @@ fun main() {
         var result = 0
 
         for (idx in 1 until input.size) {
-            if (input[idx].toInt() > input[idx-1].toInt()) {
+            if (input[idx].toInt() > input[idx - 1].toInt()) {
                 result++
             }
         }
@@ -24,7 +28,7 @@ fun main() {
         var result = 0
 
         for (idx in 1 until processedInput.size) {
-            if (processedInput[idx].sum() > processedInput[idx-1].sum()) {
+            if (processedInput[idx].sum() > processedInput[idx - 1].sum()) {
                 result++
             }
         }
@@ -32,11 +36,11 @@ fun main() {
     }
 
     // test if implementation meets criteria from the description, like:
-    val testInput = readInput("Day01_test")
+    val testInput = readInput("Day01/Day01_test")
     check(part1(testInput) == 7)
     check(part2(testInput) == 5)
 
-    val input = readInput("Day01")
+    val input = readInput("Day01/Day01")
     println(part1(input))
     println(part2(input))
 }
