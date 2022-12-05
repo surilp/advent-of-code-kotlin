@@ -1,4 +1,4 @@
-package Day10
+package _2021.Day10
 
 import readInput
 
@@ -79,11 +79,11 @@ class SyntaxScoring(val input_file: String) {
 }
 
 fun main() {
-    val syntaxScoring = SyntaxScoring("Day10/Day10_test")
+    val syntaxScoring = SyntaxScoring("_2021/Day10/Day10_test")
     check(syntaxScoring.getPart1Result() == 26397)
     check(syntaxScoring.getPart2Result() == 288957L)
 
-    val syntaxScoringMain = SyntaxScoring("Day10/Day10")
+    val syntaxScoringMain = SyntaxScoring("_2021/Day10/Day10")
     println("part 1 - ${syntaxScoringMain.getPart1Result()}")
     println("part 2 - ${syntaxScoringMain.getPart2Result()}")
 
